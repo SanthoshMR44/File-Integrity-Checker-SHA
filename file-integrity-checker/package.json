@@ -1,0 +1,20 @@
+{
+  "name": "file-integrity-checker",
+  "private": true,
+  "version": "1.0.0",
+  "description": "File Integrity Checker Using SHA-256",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "test": "npm --prefix server test"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
